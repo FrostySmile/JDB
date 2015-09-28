@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:indicator ="http://schemas.android.com/apk/res/com.yihen.jdb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_navigator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+             >
+             
+            <TextView 
+                android:id="@+id/navi_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_label_blue"
+                android:textColor="#ffffff"
+                android:text="@string/overLook"
+                android:clickable="true"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:onClick="goToWelcoemByBtn"
+                />
+
+            <com.yihen.jdb.ui.widget.CirclePageIndicator
+                android:id="@+id/pager_Indicator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                indicator:snap="false"
+                indicator:fillColor="#ffffff"
+                indicator:pageColor="#55000000"
+                indicator:radius="4dp"
+                indicator:strokeWidth="1dp"
+                indicator:strokeColor="#ffffff"
+                android:padding="3dp"
+                >
+            </com.yihen.jdb.ui.widget.CirclePageIndicator>
+            
+        </LinearLayout>
+   
+        
+</FrameLayout>
+

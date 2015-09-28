@@ -1,0 +1,109 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 指示器 -->
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#11000000</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">5dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+
+    <!-- 提示框样式 -->
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/full_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item> 
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <!-- 菜单字体样式 -->
+    <style  name = "menu_text_style">
+        <item name ="android:textColor">#ffffff</item>
+        <item name ="android:textStyle">bold</item>
+        <item name ="android:textSize">15sp</item>
+        <item name = "android:paddingLeft">8dp</item>
+        <item name ="android:paddingRight">8dp</item>
+    </style>
+    
+    <!-- 个人中心模块第一 -->
+    <style  name = "me_block_style_first">
+        <item name ="android:padding">12dp</item>
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name = "android:background">@drawable/bg_round_first_selector</item>
+        <item name ="android:clickable">true</item>
+    </style>
+    <!-- 个人中心模块中间 -->
+    <style  name = "me_block_style_middle">
+        <item name ="android:padding">12dp</item>
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name = "android:background">@drawable/bg_round_middle_selector</item>
+        <item name ="android:clickable">true</item>
+    </style>
+    <!-- 个人中心模块最后一个 -->
+    <style  name = "me_block_style_last">
+        <item name ="android:padding">12dp</item>
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name = "android:background">@drawable/bg_round_last_selector</item>
+        <item name ="android:clickable">true</item>
+    </style>
+    <!-- 个人中心模块单一 -->
+    <style  name = "me_block_style_single">
+        <item name ="android:padding">12dp</item>
+        <item name ="android:layout_width">match_parent</item>
+        <item name ="android:layout_height">wrap_content</item>
+        <item name = "android:background">@drawable/bg_round_single_selector</item>
+        <item name ="android:clickable">true</item>
+    </style>
+    <!-- 个人中心模块字体一 -->
+	<style  name = "me_block_text_style">
+	    		<item name="android:layout_width">match_parent</item>
+	    		<item name ="android:layout_height">wrap_content</item>
+	        <item name ="android:textColor">#88000000</item>
+	        <item name="android:textSize">14sp</item>
+	        <item name ="android:textStyle">bold</item>
+	</style>
+
+
+
+     <style name="login_header_style">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    
+    <style name="login_button_style">
+         <item name="android:background">@drawable/login_button_drawable</item>
+         <item name="android:textColor">@color/white_font</item>
+         <item name="android:textSize">@dimen/medium_font_size</item>
+    </style>
+    
+    
+</resources>

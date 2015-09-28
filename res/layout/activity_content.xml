@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:multitab ="http://schemas.android.com/apk/res/com.yihen.jdb"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout 
+        android:id="@+id/item_content"
+        android:layout_width="match_parent"
+   		android:layout_height="match_parent"
+    		android:background="@color/white"
+    		android:orientation="vertical"
+        >
+        	<!-- 顶部导航 -->
+       	<include layout="@layout/header_activity_main"/>
+        
+       	<!-- fragment填充区 -->
+      	 <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="9.7"
+	        >
+	        <!-- 内容区覆盖层 -->
+	        <ImageView 
+		        android:id="@+id/bg_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@android:color/transparent"
+		        android:contentDescription="@null"
+		        android:clickable="true"
+		        android:onClick="togMenu"
+	        />
+	        <!-- 内容区 -->
+	        <LinearLayout 
+		        android:id="@+id/fragmentContent"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical"
+	        />
+        
+    		</RelativeLayout>
+    
+      	 
+	      <!-- 底部主tab页 -->
+	     <LinearLayout 
+	         android:layout_width="match_parent"
+	         android:layout_height="1dp"
+	         android:background="@color/transparent_33"
+	         >
+	         
+	     </LinearLayout>
+	     <com.yihen.jdb.ui.widget.BottomTabView
+	        android:id="@+id/footerTab"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        multitab:useIcon= "true"
+	        multitab:tabTextStartColor = "@color/gray"
+	        multitab:tabTextEndColor = "@color/bg_mainColor_green_only"
+	        multitab:useAlpha = "false"
+	        multitab:useTouch = "false"
+	        >
+	    </com.yihen.jdb.ui.widget.BottomTabView>
+    </LinearLayout>
+</FrameLayout>

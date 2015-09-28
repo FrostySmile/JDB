@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <!-- 头像区 -->
+    <RelativeLayout 
+        android:id="@+id/menu_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="8dp"
+        android:gravity="center"
+        >
+        <com.yihen.jdb.ui.widget.RoundImageView
+            android:id="@+id/user_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+            android:src="@drawable/user" />
+        
+        <LinearLayout 
+            android:id="@+id/user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/user_head"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+              <TextView 
+	            android:id="@+id/user_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/userName"
+	            android:textColor="@color/white"
+	            />
+        
+	        <TextView 
+	            android:id="@+id/user_address"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/userAddress"
+	            android:textColor="@color/white"
+	            />
+        </LinearLayout>
+              
+    </RelativeLayout>
+    
+    <!-- 菜单区 -->
+    <ListView 
+        android:id="@+id/menu_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_weight="6"
+        >
+    </ListView>
+    
+    <!-- 设置区 -->
+    <RelativeLayout 
+        android:id="@+id/menu_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:layout_weight="1"
+        >
+        <ImageView 
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_icon_setting_wite"
+            android:contentDescription="@null"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+    
+    
+</LinearLayout>

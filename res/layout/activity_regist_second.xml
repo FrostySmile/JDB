@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/header_activity_common"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        >
+        <TextView 
+        android:id="@+id/btn_getCode"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/getCode"
+        android:background="@drawable/btn_label_orange_enabel_selector"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:enabled="false"
+		android:padding="10dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:onClick="GetIdentyCodeAgain"
+        />
+        
+       <com.yihen.jdb.ui.widget.ClearEditText 
+        android:id="@+id/edt_identyCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btn_getCode"
+        android:inputType="number"
+        android:hint="@string/identyCodeHint"
+        android:maxLength="6"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_round_single_normal"
+        />
+    </RelativeLayout>
+      
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <CheckBox 
+        android:id="@+id/cb_changeInputType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/eye_selector"
+        android:layout_marginRight="2dp"
+        android:button="@null"
+        />
+        
+       <com.yihen.jdb.ui.widget.ClearEditText 
+        android:id="@+id/edt_registpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/cb_changeInputType"
+        android:hint="@string/passHint"
+        android:inputType="textPassword"
+        android:maxLength="18"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_round_single_normal"
+        />
+    </RelativeLayout>
+    
+   	<TextView 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:enabled="true"
+		android:layout_margin="10dp"
+		android:textColor="@color/transparent_33"
+		android:textSize="12sp"
+		android:text="@string/passPrompt"
+   	    />
+    
+    <TextView 
+        android:layout_margin="10dp"
+        android:id="@+id/btn_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/complete"
+        android:background="@drawable/btn_label_orange_enabel_selector"
+        android:enabled="false"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:onClick="Complete"
+        />
+    
+</LinearLayout>
+

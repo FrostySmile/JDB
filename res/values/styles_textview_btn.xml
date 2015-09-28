@@ -1,0 +1,38 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    
+    <!-- 常用按钮(TextView)样式 -->
+    <style name="style_btn_orange">
+        <item name="android:background">@drawable/btn_label_orange_enabel_selector</item>
+        <item name="android:textColor">@color/white_font</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="style_btn_blue">
+        <item name="android:background">@drawable/btn_label_blue_enabel_selector</item>
+        <item name="android:textColor">@color/white_font</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="style_btn_green">
+        <item name="android:background">@drawable/btn_label_green_enabel_selector</item>
+        <item name="android:textColor">@color/white_font</item>
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="style_btn_red">
+        <item name="android:background">@drawable/btn_label_red_enabel_selector</item>
+        <item name="android:textColor">@color/white_font</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+</resources>

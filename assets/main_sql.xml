@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls>
+    
+    
+    <!--**********************version 2 业务相关数据表**********************-->
+    <sql id = "2">
+        <!-- 创建登陆用户表 -->
+        <content>
+            DROP TABLE IF EXISTS 'tb_user';
+        </content>
+    </sql>
+    
+      
+      
+    
+</sqls>

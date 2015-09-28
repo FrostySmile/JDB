@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/header_activity_common"/>
+    
+    <com.yihen.jdb.ui.widget.ClearEditText 
+        android:id="@+id/edt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:hint="@string/phoneHint"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:background="@drawable/bg_round_single_normal"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/note_1"
+        android:layout_margin="10dp"
+        android:textColor="@color/transparent_33"
+        android:textSize="@dimen/smaller_font_size"
+        />
+    
+    <TextView 
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/btn_label_orange_enabel_selector"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:onClick="NextStep"
+        />
+    
+</LinearLayout>
+

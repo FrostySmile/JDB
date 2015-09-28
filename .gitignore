@@ -1,0 +1,12 @@
+
+*.class
+
+gen/com/yihen/jdb/R.java
+
+gen/com/yihen/jdb/BuildConfig.java
+
+bin/AndroidManifest.xml
+
+bin/classes/settings.properties
+
+bin/jarlist.cache

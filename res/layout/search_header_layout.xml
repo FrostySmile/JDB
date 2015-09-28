@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res/com.yihen.jdb"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="@dimen/height_60dp">
+              <LinearLayout
+                      android:id="@+id/back"
+                      android:orientation="horizontal"
+                      android:layout_width="@dimen/width_50dp"
+                      android:layout_height="@dimen/height_60dp"
+                      android:onClick="back"
+                      >
+                  <ImageView
+                          android:layout_width="@dimen/width_50dp"
+                          android:layout_height="@dimen/height_40dp"
+                          android:paddingLeft="@dimen/padding_10dp"
+                          android:paddingRight="@dimen/padding_10dp"
+                          android:layout_gravity="center"
+                          android:src="@drawable/back"
+                          />
+              </LinearLayout>
+             <Button
+                     android:id="@+id/search_button"
+                     android:layout_width="@dimen/width_80dp"
+                     android:layout_height="@dimen/height_60dp"
+                     android:layout_alignParentRight="true"
+                     android:background="@color/white"
+                     android:text="搜索"
+                     />
+             <com.yihen.jdb.ui.widget.ExpandEditText
+                     android:layout_width="wrap_content"
+                     android:layout_height="@dimen/height_40dp"
+                     android:layout_centerInParent="true"
+                     android:layout_toRightOf="@id/back"
+                     android:layout_toLeftOf="@id/search_button"
+                     android:background="@drawable/search_background_drawable"
+                     app:right_visibility="gone"
+                     app:left_visibility="visiable"
+                     app:hint="搜索加电宝商家"
+                     />
+
+</RelativeLayout>

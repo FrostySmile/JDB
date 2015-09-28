@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/height_50dp"
+               >
+              <TextView
+                      android:id="@+id/service_name"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/height_50dp"
+                      android:textColor="@color/black_font"
+                      android:background="@drawable/service_item_background_drawable"
+                      android:gravity="center"
+                      android:textSize="@dimen/max_font_size"
+                      android:text="电脑"
+                      />
+</LinearLayout>

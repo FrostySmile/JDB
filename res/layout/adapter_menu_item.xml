@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menuLayout"
+    android:clickable="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/menu_item_selector"
+    tools:context=".MainActivity" >
+	            <ImageView 
+	                android:id="@+id/menu2_icon_left"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:contentDescription="@null"
+	                />
+	            <TextView 
+	                android:id="@+id/menu_title"
+	                style="@style/menu_text_style"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/menu2_icon_left"
+	                android:layout_centerVertical="true"
+	                />
+	            
+	            <ImageView 
+	                android:id="@+id/notifi_icon"
+	                android:layout_width="10dp"
+	                android:layout_height="10dp"
+	                android:layout_alignBottom="@id/menu_title"
+	                android:src="@drawable/news_bg"
+	                android:contentDescription="@null"
+	                android:layout_toRightOf="@id/menu_title"
+	                android:layout_centerVertical="true"
+	                />
+	            
+	            <ImageView 
+	                android:id="@+id/menu2_icon_right"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_centerVertical="true"
+	                android:src="@drawable/icon_top_back"
+	                android:rotation="180"
+	                android:layout_margin="5dp"
+	                android:contentDescription="@null"
+	                />
+	        
+</RelativeLayout>

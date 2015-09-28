@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_item_p"
+    tools:context=".MainActivity" >
+    <!-- 主布局 -->
+    <com.yihen.jdb.ui.widget.SlidingPageMenu 
+        android:id="@+id/slidPageMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <!-- 侧滑菜单 -->
+            <include layout="@layout/activity_menu"/>
+            <!-- 内容区域 -->
+            <include layout="@layout/activity_content"/>
+        </LinearLayout>
+    </com.yihen.jdb.ui.widget.SlidingPageMenu>
+</RelativeLayout>

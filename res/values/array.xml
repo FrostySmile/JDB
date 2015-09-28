@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 模块导航 -->
+    <string-array name="FootTab">
+		<item>关注</item>
+		<item>找维修</item>
+		<item>我</item>
+	</string-array>
+	
+    <!-- 侧滑菜单 -->
+    <string-array name = "MenuItems">
+        <item>更改个人信息</item>
+        <item>App检测更新</item>
+        <item>附近动态发布</item>
+    </string-array>
+    
+</resources>

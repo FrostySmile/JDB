@@ -1,0 +1,155 @@
+<com.yihen.jdb.ui.widget.VerticalScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/transparent_11"
+     >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/radius_8dp"
+        >
+        <RelativeLayout 
+            android:id="@+id/me_1"
+			style="@style/me_block_style_single"      
+			android:layout_marginTop="@dimen/radius_8dp"      
+            >
+            <com.yihen.jdb.ui.widget.RoundImageView 
+                android:id="@+id/uHeader"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user"
+                />
+            <ImageView 
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edit_green"
+                android:contentDescription="@null"
+                android:layout_alignParentRight="true"
+                />
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               	android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/uHeader"
+                android:layout_toLeftOf="@id/edit"
+                android:paddingLeft="10dp"
+                >
+                <TextView 
+                    android:id="@+id/uCatName"
+                    android:text="Frosty"
+                    style="@style/me_block_text_style"
+                    />
+                <TextView 
+                    android:id="@+id/uAddress"
+                    style="@style/me_block_text_style"
+                    android:text="四川成都"
+                    />
+                  <TextView 
+                style="@style/me_block_text_style"
+                android:text="15198014562"
+                android:textColor="@color/transparent_55"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+        
+        
+        
+        
+        
+        
+        <RelativeLayout 
+            android:id="@+id/me_2"
+            style="@style/me_block_style_first"
+            android:layout_marginTop="@dimen/radius_10dp"
+            >
+            <TextView 
+                style="@style/me_block_text_style"
+                android:text="维修定单"
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/me_3"
+            style="@style/me_block_style_middle"
+             android:layout_marginTop="-3dp"
+            >
+            <TextView 
+                style="@style/me_block_text_style"
+                android:text="维修记录"
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/me_4"
+            style="@style/me_block_style_middle"
+             android:layout_marginTop="-3dp"
+            >
+            <TextView 
+                style="@style/me_block_text_style"
+                android:text="我的财富"
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/me_5"
+            style="@style/me_block_style_last"
+            android:layout_marginTop="-3dp"
+            >
+            <TextView 
+                style="@style/me_block_text_style"
+                android:text="系统消息"
+                />
+        </RelativeLayout>
+        
+        
+        <RelativeLayout 
+            android:id="@+id/me_22"
+            style="@style/me_block_style_first"
+            android:layout_marginTop="@dimen/radius_10dp"
+            >
+            <TextView 
+                style="@style/me_block_text_style"
+                android:text="清除缓存"
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/me_33"
+            style="@style/me_block_style_middle"
+             android:layout_marginTop="-3dp"
+            >
+            <TextView 
+                style="@style/me_block_text_style"
+                android:text="意见反馈"
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/me_55"
+            style="@style/me_block_style_last"
+            android:layout_marginTop="-3dp"
+            >
+            <TextView 
+                style="@style/me_block_text_style"
+                android:text="关于我们"
+                />
+        </RelativeLayout>
+        
+        
+        <RelativeLayout 
+            android:id="@+id/me_11"
+			style="@style/me_block_style_single"      
+			android:layout_marginTop="@dimen/radius_10dp"      
+            >
+        	<TextView 
+                style="@style/me_block_text_style"
+                android:text="设置"
+                />
+            </RelativeLayout>
+    </LinearLayout>
+
+
+</com.yihen.jdb.ui.widget.VerticalScrollView>

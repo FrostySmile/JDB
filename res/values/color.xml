@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <!-- 主题背景 -->
+    <color name="bg_mainColor_green_only">#4caf50</color>
+    <color name="bg_mainColor_green_yellow">#8bc34a</color>
+    <!-- Welcome -->
+    <color name="app_start_background">#71B6B3</color>
+    <color name="app_start_button_background">@color/orange</color>    
+
+    <!-- 常用颜色值 -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#E0e3e3e3</color>
+    <color name="black">#000000</color>
+    <color name="black_transparent">#E0333232</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="menu_gray_background">#f1f1f1</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+	<color name = "lightwhite">#f8f8ff</color>
+    
+    <color name="full_transparent">#00000000</color><!-- 全透明 -->
+    <color name="half_transparent">#aa000000</color><!-- 半透明 -->
+
+	<color name="transparent_11">#11000000</color>
+	<color name="transparent_22">#22000000</color>
+	<color name="transparent_33">#33000000</color>
+	<color name="transparent_55">#55000000</color>
+	<color name="transparent_66">#66000000</color>
+	<color name="transparent_77">#77000000</color>
+	<color name="transparent_88">#88000000</color>
+	<color name="transparent_99">#99000000</color>
+	
+	
+    <color name="orange">#ED853B</color>
+
+    <!-- 特殊颜色值 -->
+    <color name = "styleColor_green">#4caf50</color>
+    <color name = "styleColor_blue">#31b0f2</color>
+
+
+    <!--字体颜色-->
+    <color name="white_font">#FFFFFF</color>
+    <color name="gray_font">#aaa1aa</color>
+    <color name="black_font">#000000</color>
+
+
+    <!-- login -->
+    <color name="login_background_start_color">#FFFFFF</color>
+    <color name="login_background_center_color">#F0F0f0</color>
+    <color name="login_background_end_color">#e0e0e0</color>
+    
+    <!-- 指示器 -->
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    
+</resources>
